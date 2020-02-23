@@ -12,7 +12,7 @@ class Application
       item = Item.all.find{|item| item.name == item_name}
       resp.write item.price
       else
-      resp.write "Route not found"
+      resp.write "Item not found"
       resp.status = 404 
     end
     elsif
